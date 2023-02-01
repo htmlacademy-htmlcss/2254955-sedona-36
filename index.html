@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="page">
@@ -25,16 +26,16 @@
 
           <ul class="navigation__list navigation__user">
             <li class="navigation__item">
-              <a class="navigation__link" href="#"></a>
+              <a class="navigation__link navigation__link_search" href="#"></a>
               <span class="visually-hidden">Поиск.</span>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#"></a>
+              <a class="navigation__link navigation__link_favourite" href="#"></a>
               <span class="visually-hidden">Нравится.</span>
               <span>12</span>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Хочу сюда</a>
+              <a class="navigation__link navigation__link_button" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -51,33 +52,33 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества.</h2>
 
-          <div class="advantages__text">
-            <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages__container">
+            <p class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="advantages__subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
 
           <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantage__title">Настоящий городок</h3>
-              <p class="advantage__description">Все достопримечательности находятся очень близко</p>
-              <img class="advantage__photo" src="images/advantages/advantage-1.jpg" alt="Домики на фоне гор." width="800" height="384">
+            <li class="advantages__item advantages__item_white">
+              <h3 class="advantages__name advantages__name_white">Настоящий городок</h3>
+              <p class="advantages__description advantages__description_white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img class="advantages__photo" src="images/advantages/advantage-1.jpg" alt="Домики на фоне гор." width="800" height="384">
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Небольшая площадь</h3>
+              <h3 class="advantages__name">Небольшая площадь</h3>
               <p class="advantages__description">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Красивая дорога</h3>
+              <h3 class="advantages__name">Красивая дорога</h3>
               <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Мало туристов</h3>
+              <h3 class="advantages__name">Мало туристов</h3>
               <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li>
-              <h3 class="advantage__title">Там есть мост дьявола</h3>
-              <p class="advantage__description">Все достопримечательности находятся очень близко</p>
-              <img class="advantage__photo" src="images/advantages/advantage-2.jpg" alt="Каньон, горы, снова горы." width="800" height="385">
+            <li class="advantages__item advantages__item advantages__item_white">
+              <h3 class="advantages__name advantages__name_white">Там есть мост дьявола</h3>
+              <p class="advantages__description advantages__description_white">Все достопримечательности находятся очень близко</p>
+              <img class="advantages__photo" src="images/advantages/advantage-2.jpg" alt="Каньон, горы, снова горы." width="800" height="385">
             </li>
           </ul>
         </section>
@@ -85,39 +86,39 @@
         <section class="services">
           <h2 class="visually-hidden">Сервис.</h2>
 
-          <div class="services__text">
-            <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-            <p>Опытный персонал и качественное обслуживание!</p>
+          <div class="services__container">
+            <p class="services__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="services__subtitle">Опытный персонал и качественное обслуживание!</p>
           </div>
 
           <ul class="services__list">
             <li class="services__item">
-              <h3 class="services__title">Жильё</h3>
+              <h3 class="services__name">Жильё</h3>
               <p class="services__description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
             </li>
-            <li class="services__item">
-              <h3 class="services__title">Еда</h3>
+            <li class="services__item services__item_white">
+              <h3 class="services__name">Еда</h3>
               <p class="services__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services__item">
-              <h3 class="services__title">Сувениры</h3>
+              <h3 class="services__name">Сувениры</h3>
               <p class="services__description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
 
         <section class="search">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="link" href="#">Поиск гостиницы в Седоне</a>
+          <h2 class="search__title">Заинтересовались?</h2>
+          <p class="search__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="newsletter newsletter_background">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+          <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-mail">Подписаться.</label>
-            <input class="newsletter__field" placeholder="Ваш e-mail" type="email" id="newsletter-mail" name="newsletter-mail" required>
+            <input class="newsletter__email" placeholder="Ваш e-mail" type="email" id="newsletter-mail" name="newsletter-mail" required>
             <button class="newsletter__button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -130,17 +131,17 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="link" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="link" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Telegram.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Youtube.</span>
               </a>
             </li>

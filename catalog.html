@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Каталог</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
   <body>
     <div class="page">
       <header class="header">
@@ -25,16 +26,16 @@
 
           <ul class="navigation__list navigation__user">
             <li class="navigation__item">
-              <a class="navigation__link" href="#"></a>
+              <a class="navigation__link navigation__link_search" href="#"></a>
               <span class="visually-hidden">Поиск.</span>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#"></a>
+              <a class="navigation__link navigation__link_favourite" href="#"></a>
               <span class="visually-hidden">Нравится.</span>
               <span>12</span>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Хочу сюда</a>
+              <a class="navigation__link navigation__link_button" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +46,7 @@
         <header class="catalog__header">
           <ol class="breadcrumbs">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">
+              <a class="breadcrumbs__icon" href="index.html">
                 <span class="visually-hidden">На главную.</span>
               </a>
             </li>
@@ -65,19 +66,19 @@
               <ul class="infrastructure__list">
                 <li class="infrastructure__item">
                   <label class="infrastructure__description">
-                    <input class="infrastructure__field" type="checkbox" name="pool" checked>
+                    <input class="infrastructure__checkbox" type="checkbox" name="pool" checked>
                     <span class="infrastructure__name">Бассейн</span>
                   </label>
                 </li>
                 <li class="infrastructure__item">
                   <label class="infrastructure__description">
-                    <input class="infrastructure__field" type="checkbox" name="parking" checked>
+                    <input class="infrastructure__checkbox" type="checkbox" name="parking" checked>
                     <span class="infrastructure__name">Парковка</span>
                   </label>
                 </li>
                 <li class="infrastructure__item">
                   <label class="infrastructure__description">
-                    <input class="infrastructure__field" type="checkbox" name="wi-fi">
+                    <input class="infrastructure__checkbox" type="checkbox" name="wi-fi">
                     <span class="infrastructure__name">Wi-Fi</span>
                   </label>
                 </li>
@@ -125,9 +126,9 @@
 
               <div class="price__selector">
                 <label class="visually-hidden" for="price-min">Минимальная цена.</label>
-                <input class="price__min" type="number" id="price-min" name="price-min">
+                <input class="price__selector_min" type="number" id="price-min" name="price-min">
                 <label class="visually-hidden" for="price-max">Максимальная цена.</label>
-                <input class="price-max" type="number" id="price-max" name="price-max">
+                <input class="price__selector_max" type="number" id="price-max" name="price-max">
               </div>
 
             </fieldset>
@@ -140,7 +141,7 @@
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска гостиниц.</h2>
 
-          <div class="sorting">
+          <div class="catalog__sorting">
             <p class="sorting__text">Найдено гостиниц: <output class="sorting__count">38</output></p>
             <select class="sorting__order" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
@@ -148,9 +149,9 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
 
-            <ul class="view">
+            <ul class="catalog__views">
               <li class="view__list">
-                <a class="view__item" href="#">
+                <a class="view__item view__item_border" href="#">
                   <span class="visually-hidden">Показать карточки.</span>
                 </a>
               </li>
@@ -167,16 +168,16 @@
             </ul>
           </div>
 
-          <ul class="result__list">
+          <ul class="catalog__results">
             <li class="result__item">
               <a class="result__link" href="#">
                 <img class="result__image" src="images/hotels/hotel-1.jpg" alt="Звёздное небо в расщелине гор." width="300" height="212">
                 <h3 class="result__title">Amara Resort & Spa</h3>
               </a>
-              <p>Гостиница</p>
+              <p class="result__text">Гостиница</p>
               <b class="result__price">От 4000 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourites" type="button">
+              <button class="button button-favourite" type="button">
                 <span class="button__name">В избранное</span>
               </button>
               <span class="result__rating rating_4">Рейтинг: 8,5</span>
@@ -186,10 +187,10 @@
                 <img class="result__image" src="images/hotels/hotel-2.jpg" alt="Радуга над горным хребтом." width="300" height="212">
                 <h3 class="result__title">Villas at Poco Diablo</h3>
               </a>
-              <p>Гостиница</p>
+              <p class="result__text">Гостиница</p>
               <b class="result__price">От 5000 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <a class="link link-in-favourite" href="#">В избранном</a>
+              <a class="result__link result__link_favourite" href="#">В избранном</a>
               <span class="result__rating rating_4">Рейтинг: 9,2</span>
             </li>
             <li class="result__item">
@@ -197,10 +198,10 @@
                 <img class="result__image" src="images/hotels/hotel-3.jpg" alt="Горы на фоне голубого неба." width="300" height="212">
                 <h3 class="result__title">Desert Quail Inn</h3>
               </a>
-              <p>Гостиница</p>
+              <p class="result__text">Гостиница</p>
               <b class="result__price">От 2500 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourites" type="button">
+              <button class="button button-favourite" type="button">
                 <span class="button__name">В избранное</span>
               </button>
               <span class="result__rating rating_3">Рейтинг: 6,9</span>
@@ -210,10 +211,10 @@
                 <img class="result__image" src="images/hotels/hotel-4.jpg" alt="Гора на фоне звёздного неба." width="300" height="212">
                 <h3 class="result__title">GreenTree Inn</h3>
               </a>
-              <p>Гостиница</p>
+              <p class="result__text">Гостиница</p>
               <b class="result__price">От 1500 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourites" type="button">
+              <button class="button button-favourite" type="button">
                 <span class="button__name">В избранное</span>
               </button>
               <span class="result__rating rating_2">Рейтинг: 5,0</span>
@@ -237,7 +238,7 @@
               <a class="pagination__link" href="#">4</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">...</a>
+              <a class="pagination__link pagination__link_dots" href="#">...</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#">10</a>
@@ -246,11 +247,11 @@
         </section>
 
         <section class="newsletter">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+          <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-mail">Подписаться.</label>
-            <input class="newsletter__field" placeholder="Ваш e-mail" type="email" id="newsletter-mail" name="newsletter-mail" required>
+            <input class="newsletter__email" placeholder="Ваш e-mail" type="email" id="newsletter-mail" name="newsletter-mail" required>
             <button class="newsletter__button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -263,17 +264,17 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="link" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="link" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Telegram.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Youtube.</span>
               </a>
             </li>
