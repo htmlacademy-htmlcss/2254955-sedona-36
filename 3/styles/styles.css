@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.visually-hidden {
+}
+
+.page {
+}
+
+.header {
+}
+
+.navigation__link {
+}
+
+.navigation__link_current {
+}
+
+.navigation__logo {
+}
+
+.navigation {
+}
+
+.navigation__list {
+}
+
+.navigation__item {
+}
+
+.navigation__link {
+}
+
+.navigation__link_search {
+}
+
+.navigation__link_favourite {
+}
+
+.navigation__link_button {
+}
+
+.navigation__user {
+}
+
+.hero {
+}
+
+.hero__logo {
+}
+
+.advantages {
+}
+
+.advantages__container {
+}
+
+.advantages__title {
+}
+
+.advantages__subtitle {
+}
+
+.advantages__list {
+}
+
+.advantages__item {
+}
+
+.advantages__item_white {
+}
+
+.advantages__name {
+}
+
+.advantages__name_white {
+}
+
+.advantages__description {
+}
+
+.advantages__description_white {
+}
+
+.advantages__photo {
+}
+
+.services {
+}
+
+.services__container {
+}
+
+.services__list {
+}
+
+.services__item {
+}
+
+.services__subtitle {
+}
+
+.services__list {
+}
+
+.services__item {
+}
+
+.services__item_white {
+}
+
+.services__name {
+}
+
+.services__description {
+}
+
+.search {
+}
+
+.search__title {
+}
+
+.search__text {
+}
+
+.search__link {
+}
+
+.newsletter {
+}
+
+.newsletter_background {
+}
+
+.newsletter__title {
+}
+
+.newsletter__text {
+}
+
+.newsletter__form {
+}
+
+.newsletter__email {
+}
+
+.newsletter__button {
+}
+
+.social {
+}
+
+.social__list {
+}
+
+.social__item {
+}
+
+.social__link {
+}
+
+.contacts {
+}
+
+.contacts__address {
+}
+
+.contacts__phone {
+}
+
+.about {
+}
+
+.about-link {
+}
+
+.catalog__title {
+}
+
+.catalog__header {
+}
+
+.breadcrumbs {
+}
+
+.breadcrumbs__item {
+}
+
+.breadcrumbs__icon {
+}
+
+.breadcrumbs__link {
+}
+
+.filter {
+}
+
+.infrastructure {
+}
+
+.infrastructure__title {
+}
+
+.infrastructure__list {
+}
+
+.infrastructure__item {
+}
+
+.infrastructure__description {
+}
+
+.infrastructure__checkbox {
+}
+
+.infrastructure__name {
+}
+
+.type {
+}
+
+.type__title {
+}
+
+.type__list {
+}
+
+.type__item {
+}
+
+.type__description {
+}
+
+.type__field {
+}
+
+.type__name {
+}
+
+.price {
+}
+
+.price__title {
+}
+
+.price__list {
+}
+
+.price__item {
+}
+
+.price__description {
+}
+
+.price__field{
+}
+
+.selector {
+}
+
+.price__selector_min {
+}
+
+.price__selector_max {
+}
+
+.button {
+}
+
+.button-blue {
+}
+
+.button-text {
+}
+
+.button-favourite {
+}
+
+.button__name {
+}
+
+.catalog {
+}
+
+.catalog__sorting {
+}
+
+.sorting__text {
+}
+
+.sorting__count {
+}
+
+.sorting__order {
+}
+
+.catalog__views {
+}
+
+.view__list {
+}
+
+.view__item {
+}
+
+.view__item_border {
+}
+
+.catalog__results {
+}
+
+.result__item {
+}
+
+.result__link {
+}
+
+.result__link_favourite {
+}
+
+.result__image {
+}
+
+.result__title {
+}
+
+.result__text{
+}
+
+.result__price {
+}
+
+.result__details {
+}
+
+.result__rating {
+}
+
+.rating_1 {
+}
+
+.rating_2 {
+}
+
+.rating_3 {
+}
+
+.rating_4 {
+}
+
+.rating_5 {
+}
+
+.pagination {
+}
+
+.pagination__list {
+}
+
+.pagination__item {
+}
+
+.pagination__link {
+}
+
+.pagination__current {
+}
+
+.pagination__link_dots {
+}
+
