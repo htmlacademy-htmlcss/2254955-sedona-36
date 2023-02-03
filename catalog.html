@@ -8,8 +8,8 @@
   <body>
     <div class="page">
       <header class="header">
-        <a class="navigation__link" href="index.html">
-          <img class="navigation__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="138" height="64">
+        <a class="header__link" href="index.html">
+          <img class="header__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="138" height="64">
         </a>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -133,8 +133,10 @@
 
             </fieldset>
 
-            <button class="button button-blue" type="submit">Применить</button>
-            <button class="button button-text" type="reset">Сбросить</button>
+            <div class="filter__buttons">
+              <button class="button button-blue" type="submit">Применить</button>
+              <button class="button button-text" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
 
@@ -177,9 +179,7 @@
               <p class="result__text">Гостиница</p>
               <b class="result__price">От 4000 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourite" type="button">
-                <span class="button__name">В избранное</span>
-              </button>
+              <button class="button button-add-to-favourite" type="button">В избранное</button>
               <span class="result__rating rating_4">Рейтинг: 8,5</span>
             </li>
             <li class="result__item">
@@ -190,7 +190,7 @@
               <p class="result__text">Гостиница</p>
               <b class="result__price">От 5000 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <a class="result__link result__link_favourite" href="#">В избранном</a>
+              <button class="button button-in-favourite" type="button">В избранном</button>
               <span class="result__rating rating_4">Рейтинг: 9,2</span>
             </li>
             <li class="result__item">
@@ -201,9 +201,7 @@
               <p class="result__text">Гостиница</p>
               <b class="result__price">От 2500 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourite" type="button">
-                <span class="button__name">В избранное</span>
-              </button>
+              <button class="button button-add-to-favourite" type="button">В избранное</button>
               <span class="result__rating rating_3">Рейтинг: 6,9</span>
             </li>
             <li class="result__item">
@@ -214,9 +212,7 @@
               <p class="result__text">Гостиница</p>
               <b class="result__price">От 1500 ₽</b>
               <a class="result__details" href="#">Подробнее</a>
-              <button class="button button-favourite" type="button">
-                <span class="button__name">В избранное</span>
-              </button>
+              <button class="button button-add-to-favourite" type="button">В избранное</button>
               <span class="result__rating rating_2">Рейтинг: 5,0</span>
             </li>
           </ul>

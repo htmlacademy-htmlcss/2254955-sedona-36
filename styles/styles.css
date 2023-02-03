@@ -19,12 +19,26 @@ body {
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page {
 }
 
 .header {
+}
+
+.header__link {
+}
+
+.header__logo {
 }
 
 .navigation__link {
@@ -123,7 +137,19 @@ body {
 .services__item {
 }
 
-.services__item_white {
+.services__item:nth-child(odd) {
+}
+
+.services__item:nth-child(even) {
+}
+
+.services__item_home {
+}
+
+.services__item_food {
+}
+
+.services__item_presents {
 }
 
 .services__name {
@@ -282,6 +308,9 @@ body {
 .price__selector_max {
 }
 
+.filter__buttons {
+}
+
 .button {
 }
 
@@ -291,7 +320,10 @@ body {
 .button-text {
 }
 
-.button-favourite {
+.button-in-favourite {
+}
+
+.button-add-to-favourite {
 }
 
 .button__name {
@@ -331,9 +363,6 @@ body {
 }
 
 .result__link {
-}
-
-.result__link_favourite {
 }
 
 .result__image {
