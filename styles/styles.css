@@ -16,6 +16,25 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -30,21 +49,18 @@ body {
 }
 
 .page {
+  background-color: #F2F2F2;
+  padding: 0px 40px;
 }
 
 .header {
+  background: #FFFFFF;
 }
 
 .header__link {
 }
 
 .header__logo {
-}
-
-.navigation__link {
-}
-
-.navigation__link_current {
 }
 
 .navigation__logo {
@@ -54,147 +70,311 @@ body {
 }
 
 .navigation__list {
+  list-style: none;
 }
 
 .navigation__item {
 }
 
 .navigation__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+}
+
+.navigation__link_current {
 }
 
 .navigation__link_search {
+  background-image: url("../images/navigation/search.svg");
+  background-repeat: no-repeat;
 }
 
 .navigation__link_favourite {
+  background-image: url("../images/navigation/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation__counter {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 10px;
 }
 
 .navigation__link_button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
 }
 
 .navigation__user {
 }
 
 .hero {
+  background-image: url("../images/backgrounds/index.jpg");
+  height: 485px;
+  color: #FFFFFF;
+  background-color: #DDEBF4;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .hero__logo {
 }
 
 .advantages {
+  background-color: #FFFFFF;
 }
 
 .advantages__container {
 }
 
 .advantages__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .advantages__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .advantages__list {
+  list-style: none;
 }
 
 .advantages__item {
 }
 
-.advantages__item_white {
+.advantages__item:nth-child(5n + 1),
+.advantages__item:nth-child(5n + 5)
+{
+  background-color: #82B3D3;
+}
+
+.advantages__item:nth-child(5n + 1) h3,
+.advantages__item:nth-child(5n + 1) p,
+.advantages__item:nth-child(5n + 5) h3,
+.advantages__item:nth-child(5n + 5) p {
+  color: #FFFFFF;
+}
+
+.advantages__item:nth-child(5n + 2),
+.advantages__item:nth-child(5n + 4) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages__item:nth-child(5n + 3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages__item:nth-child(5n + 2) h3,
+.advantages__item:nth-child(5n + 3) h3,
+.advantages__item:nth-child(5n + 4) h3 {
+  color: #000000;
+}
+
+.advantages__item:nth-child(5n + 2) p,
+.advantages__item:nth-child(5n + 3) p,
+.advantages__item:nth-child(5n + 4) p {
+  color: #333333;
 }
 
 .advantages__name {
-}
-
-.advantages__name_white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages__description {
-}
-
-.advantages__description_white {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages__photo {
 }
 
 .services {
+  background-color: #FFFFFF;
 }
 
 .services__container {
 }
 
-.services__list {
-}
-
-.services__item {
+.services__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .services__subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .services__list {
+  list-style: none;
 }
 
 .services__item {
 }
 
 .services__item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services__item:nth-child(even) {
+  background-color: #FFFFFF;
 }
 
 .services__item_home {
+  background-image: url("../images/services/housing.svg");
+  background-repeat: no-repeat;
 }
 
 .services__item_food {
+  background-image: url("../images/services/food.svg");
+  background-repeat: no-repeat;
 }
 
 .services__item_presents {
+  background-image: url("../images/services/presents.svg");
+  background-repeat: no-repeat;
 }
 
 .services__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .services__description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
 }
 
 .search {
+  background-color: #FFFFFF;
 }
 
 .search__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .search__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .search__link {
+  background-color: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .newsletter {
+  background-color: #89ABB8;
 }
 
 .newsletter_background {
+  background-image: url("../images/backgrounds/subscribe.jpg");
+  height: 415px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .newsletter__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .newsletter__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .newsletter__form {
 }
 
 .newsletter__email {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  background-color: #F2F2F2;
 }
 
 .newsletter__button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
 }
 
 .social {
 }
 
 .social__list {
+  list-style: none;
 }
 
 .social__item {
@@ -210,6 +390,14 @@ body {
 }
 
 .contacts__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .about {
