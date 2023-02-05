@@ -445,6 +445,12 @@ img {
 }
 
 .breadcrumbs__item {
+  background-color: #FFFFFF;
+}
+
+.breadcrumbs__item_home {
+  background-image: url("../images/breadcrumbs/home.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs__icon {
