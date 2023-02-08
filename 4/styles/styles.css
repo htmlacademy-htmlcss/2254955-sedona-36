@@ -318,7 +318,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
 }
 
@@ -328,7 +328,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0;
+  margin: 0 0 54px;
   padding: 0;
 }
 
@@ -365,12 +365,12 @@ img {
 }
 
 .newsletter__title {
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
 }
 
 .newsletter__text {
-  margin: 0;
+  margin: 0 0 54px;
   padding: 0;
 }
 
