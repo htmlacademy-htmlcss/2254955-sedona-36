@@ -157,11 +157,16 @@ img {
   background-color: #DDEBF4;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .hero__logo {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .advantages {
@@ -203,6 +208,7 @@ img {
 
 .advantages__item {
   width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages__item_photo {
@@ -218,10 +224,6 @@ img {
 
 .advantages__item_grey {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages__item_blue {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages__item_grey .advantages__name,
@@ -299,14 +301,11 @@ img {
 .services__item {
   width: 400px;
   padding: 81px 85px;
+  background-color: #FFFFFF;
 }
 
 .service__item_blue {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.service__item_white {
-  background-color: #FFFFFF;
 }
 
 .services__item_home {
