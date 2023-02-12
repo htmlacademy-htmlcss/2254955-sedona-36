@@ -65,7 +65,7 @@
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
 
             <div class="filter__container">
-              <div class="filter__container_start">
+              <div class="filter__container_right">
                 <fieldset class="infrastructure">
                   <legend class="infrastructure__title">Инфраструктура:</legend>
                   <ul class="infrastructure__list">
@@ -115,7 +115,7 @@
                 </fieldset>
               </div>
 
-              <div class="filter__container_end">
+              <div class="filter__container_left">
                 <fieldset class="price">
                   <legend class="price__title">Стоимость, ₽:</legend>
                   <ul class="price__list">
@@ -123,24 +123,17 @@
                       <label class="visually-hidden" for="price-min-input">Максимальная цена.</label>
                       <input class="price__field price__field_min" type="number" name="hotel-type-price-from" id="price-min-input" value="0">
                     </li>
-                    <li class="price__item">
+                    <li class="price__item price__item_max">
                       <label class="visually-hidden" for="price-max-input">Максимальная цена.</label>
                       <input class="price__field price__field_max" type="number" name="hotel-type-price-to" id="price-max-input" value="9000">
                     </li>
                   </ul>
 
-                  <div class="price__selector">
-                    <label class="visually-hidden" for="price-min-control">Ползунок минимальной цены.</label>
-                    <input class="price__selector_min" type="number" id="price-min-control" name="price-min">
-                    <label class="visually-hidden" for="price-max-control">Ползунок максимальной цены.</label>
-                    <input class="price__selector_max" type="number" id="price-max-control" name="price-max">
-                  </div>
-
                 </fieldset>
 
                 <div class="filter__buttons">
-                  <button class="button button-blue" type="submit">Применить</button>
-                  <button class="button button-text" type="reset">Сбросить</button>
+                  <button class="button button_blue" type="submit">Применить</button>
+                  <button class="button button_text" type="reset">Сбросить</button>
                 </div>
               </div>
             </div>
@@ -191,7 +184,7 @@
                 <p class="result__type">Гостиница</p>
                 <b class="result__price">От 4000 ₽</b>
                 <a class="result__details" href="#">Подробнее</a>
-                <button class="button button-blue" type="button">В избранное</button>
+                <button class="button button_blue" type="button">В избранное</button>
                 <span class="result__rating rating_4">Рейтинг: 8,5</span>
               </li>
               <li class="result__item">
@@ -202,7 +195,7 @@
                 <p class="result__type">Гостиница</p>
                 <b class="result__price">От 5000 ₽</b>
                 <a class="result__details" href="#">Подробнее</a>
-                <button class="button button-green" type="button">В избранном</button>
+                <button class="button button_green" type="button">В избранном</button>
                 <span class="result__rating rating_4">Рейтинг: 9,2</span>
               </li>
               <li class="result__item">
@@ -213,7 +206,7 @@
                 <p class="result__type">Гостиница</p>
                 <b class="result__price">От 2500 ₽</b>
                 <a class="result__details" href="#">Подробнее</a>
-                <button class="button button-blue" type="button">В избранное</button>
+                <button class="button button_blue" type="button">В избранное</button>
                 <span class="result__rating rating_3">Рейтинг: 6,9</span>
               </li>
               <li class="result__item">
@@ -224,7 +217,7 @@
                 <p class="result__type">Гостиница</p>
                 <b class="result__price">От 1500 ₽</b>
                 <a class="result__details" href="#">Подробнее</a>
-                <button class="button button-blue" type="button">В избранное</button>
+                <button class="button button_blue" type="button">В избранное</button>
                 <span class="result__rating rating_2">Рейтинг: 5,0</span>
               </li>
             </ul>
