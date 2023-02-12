@@ -474,6 +474,7 @@ img {
 
 .newsletter__form {
   display: flex;
+  width: 684px;
 }
 
 .newsletter__email {
@@ -501,7 +502,9 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding: 8px 50px;
+  padding: 8px 0;
+  box-sizing: border-box;
+  width: 232px;
   border-style: none;
   border-radius: 0px 4px 4px 0px;
 }
@@ -849,12 +852,13 @@ img {
   padding: 50px 70px 40px 70px;
   display: flex;
   justify-content: space-between;
-  gap: 192px;
+  gap: 170px;
 }
 
 .sorting__settings {
   display: flex;
-  gap: 70px;
+  width: 522px;
+  gap: 14px;
 }
 
 .sorting__text {
@@ -865,6 +869,7 @@ img {
   color: #000000;
   margin: 0;
   padding: 6px 0 7px 0;
+  width: 360px;
 }
 
 .sorting__count {
@@ -880,45 +885,50 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 292px;
+  padding-left: 20px;
 }
 
 .view__list {
   background-color: #FFFFFF;
   list-style: none;
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 0;
   margin: 0;
+  width: 216px;
 }
 
 .view__item {
   width: 48px;
   height: 48px;
   background-position: center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .view__item_cards {
   background-image: url("../images/views/view-1.svg");
   background-repeat: no-repeat;
-  border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .view__item_single {
   background-image: url("../images/views/view-2.svg");
   background-repeat: no-repeat;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .view__item_list {
   background-image: url("../images/views/view-3.svg");
   background-repeat: no-repeat;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
-.view__item_border {
+.view__item_selected {
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .result {
@@ -1045,6 +1055,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
