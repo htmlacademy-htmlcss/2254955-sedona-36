@@ -27,8 +27,7 @@ body {
   color: #000000;
   background-color: #F2F2F2;
   margin: 0;
-  height: 1px;
-  min-height: 100%;
+  height: 100%;
 }
 
 img {
@@ -66,36 +65,42 @@ img {
 
 .header__container {
   padding: 0 70px;
-  display: flex;
-  height: 64px;
+  min-height: 64px;
+  position: relative;
+  z-index: 1;
 }
 
 .header__link {
+  position: absolute;
 }
 
 .header__logo {
-}
-
-.navigation__logo {
+  display: block;
 }
 
 .navigation {
-  margin-left: 30px;
+  margin-left: 168px;
   width: 892px;
   display: flex;
   justify-content: space-between;
 }
 
 .navigation__list {
-  width: 440px;
+  width: 450px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation__item {
   padding: 20px 16px;
+  height: 64px;
+}
+
+.navigation__item_button {
+  padding: 14px 0 14px 20px;
 }
 
 .navigation__link {
@@ -105,7 +110,7 @@ img {
   line-height: 24px;
   text-decoration: none;
   color: inherit;
-
+  display: block;
 }
 
 .navigation__link_current {
@@ -114,11 +119,15 @@ img {
 .navigation__link_search {
   background-image: url("../images/navigation/search.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
 }
 
 .navigation__link_favourite {
   background-image: url("../images/navigation/heart.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
 }
 
 .navigation__counter {
@@ -141,7 +150,7 @@ img {
 }
 
 .navigation__user {
-  max-width: 312px;
+  width: 312px;
   justify-content: flex-end;
 }
 
@@ -150,8 +159,9 @@ img {
 }
 
 .hero {
-  background-image: url("../images/backgrounds/index.jpg");
-  background-size: cover;
+  background-image: url("../images/backgrounds/divider.svg"), url("../images/backgrounds/index.jpg");
+  background-size: auto, cover;
+  background-position: bottom;
   min-height: 485px;
   color: #FFFFFF;
   background-color: #DDEBF4;
@@ -174,7 +184,7 @@ img {
 }
 
 .advantages__container {
-  padding: 69px 0;
+  padding: 69px 274px;
 }
 
 .advantages__title {
@@ -208,14 +218,15 @@ img {
 
 .advantages__item {
   width: 400px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.2);
+  display: flex;
 }
 
 .advantages__item_photo {
   background-color: #82B3D3;
   color: #FFFFFF;
   width: 1200px;
-  display: flex;
 }
 
 .advantages__item_inverse {
@@ -226,39 +237,43 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages__item_grey .advantages__name,
-.advantages__item_blue .advantages__name
+.advantages__item_grey .advantage__name,
+.advantages__item_blue .advantage__name
 {
   color: #000000;
 }
 
-.advantages__item_grey .advantages__description,
-.advantages__item_blue .advantages__description
+.advantages__item_grey .advantage__description,
+.advantages__item_blue .advantage__description
 {
   color: #333333;
 }
 
-.advantages__name {
+.advantages__advantage {
+  margin: auto 85px;
+}
+
+.advantage__name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding: 102px 0 62px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 62px 0;
 }
 
-.advantages__description {
+.advantage__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding: 0 0 102px;
 }
 
 .advantages__photo {
   display: block;
+  background-color: #FFFFFF;
 }
 
 .services {
@@ -277,7 +292,7 @@ img {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 0 0 20px;
+  padding: 0 347px 20px 347px;
 }
 
 .services__subtitle {
@@ -287,7 +302,7 @@ img {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 0;
+  padding: 0 347px 0 347px;
 }
 
 .services__list {
@@ -300,30 +315,36 @@ img {
 
 .services__item {
   width: 400px;
-  padding: 81px 85px;
+  min-height: 385px;
   background-color: #FFFFFF;
+  display: flex;
+}
+
+.services__service {
+  margin: auto 85px;
+  background-position-x: center;
+}
+
+.services__service_home {
+  background-image: url("../images/services/housing.svg");
+  background-repeat: no-repeat;
+}
+
+.services__service_food {
+  background-image: url("../images/services/food.svg");
+  background-repeat: no-repeat;
+}
+
+.services__service_presents {
+  background-image: url("../images/services/presents.svg");
+  background-repeat: no-repeat;
 }
 
 .service__item_blue {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.services__item_home {
-  background-image: url("../images/services/housing.svg");
-  background-repeat: no-repeat;
-}
-
-.services__item_food {
-  background-image: url("../images/services/food.svg");
-  background-repeat: no-repeat;
-}
-
-.services__item_presents {
-  background-image: url("../images/services/presents.svg");
-  background-repeat: no-repeat;
-}
-
-.services__name {
+.service__name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -334,7 +355,7 @@ img {
   padding: 0;
 }
 
-.services__description {
+.service__description {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -384,6 +405,7 @@ img {
   text-decoration: none;
   padding: 8px 50px;
   margin: 0 108px;
+  display: block;
 }
 
 .newsletter {
@@ -456,6 +478,8 @@ img {
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
+  border-style: none;
+  border-radius: 4px 0px 0px 4px;
   width: 452px;
   height: 52px;
 }
@@ -479,34 +503,42 @@ img {
 }
 
 .footer__container {
-  padding: 40px 70px 30px 70px;
   display: flex;
-  justify-content: space-between;
+  padding: 40px 70px 30px 70px;
 }
 
 .social {
+  width: 182px;
 }
 
 .social__list {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  width: 189px;
+  margin: 0;
+  display: inline-flex;
+  width: 182px;
 }
 
 .social__item {
+  display: block;
   width: 47px;
-  height: 40px;
+  min-height: 40px;
+  position: relative;
 }
 
-.social__link {
+.social__link > svg {
+  position: absolute;
+  display: block;
+  margin: auto;
 }
 
 .contacts {
+  display: inline;
+  width: 720px;
 }
 
 .contacts__address {
+  display: inline;
 }
 
 .contacts__phone {
@@ -518,12 +550,24 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 195px 5px 194px;
+  margin: 0;
 }
 
 .about {
+  display: inline-block;
+  width: 155px;
 }
 
 .about-link {
+  display: block;
+  margin: auto 0 auto 41px;
+}
+
+.about-link svg {
+  display: block;
 }
 
 .catalog__title {

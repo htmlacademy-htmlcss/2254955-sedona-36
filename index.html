@@ -9,7 +9,7 @@
     <div class="page">
       <header class="header__container">
         <a class="header__link">
-          <img class="header__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="138" height="64">
+          <img class="header__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="138" height="70">
         </a>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -36,7 +36,7 @@
                 <span class="navigation__counter">12</span>
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item_button">
               <a class="navigation__link navigation__link_button" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -60,29 +60,35 @@
           </div>
 
           <ul class="advantages__list">
-            <li class="advantages__item_photo">
-              <div class="advantages__item">
-                <h3 class="advantages__name">Настоящий городок</h3>
-                <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <li class="advantages__item advantages__item_photo">
+              <div class="advantages__advantage">
+                <h3 class="advantage__name">Настоящий городок</h3>
+                <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages__photo" src="images/advantages/advantage-1.jpg" alt="Домики на фоне гор." width="800" height="384">
+              <img class="advantages__photo" src="images/advantages/advantage-1.jpg" alt="Домики на фоне гор." width="800" height="385">
             </li>
             <li class="advantages__item advantages__item_grey">
-              <h3 class="advantages__name">Небольшая площадь</h3>
-              <p class="advantages__description">Все достопримечательности находятся очень близко</p>
+              <div class="advantages__advantage">
+                <h3 class="advantage__name">Небольшая площадь</h3>
+                <p class="advantage__description">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__name">Красивая дорога</h3>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <div class="advantages__advantage">
+                <h3 class="advantage__name">Красивая дорога</h3>
+                <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="advantages__item advantages__item_grey">
-              <h3 class="advantages__name">Мало туристов</h3>
-              <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="advantages__advantage">
+                <h3 class="advantage__name">Мало туристов</h3>
+                <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
-            <li class="advantages__item_photo advantages__item_inverse">
-              <div class="advantages__item">
-                <h3 class="advantages__name ">Там есть мост дьявола</h3>
-                <p class="advantages__description">Все достопримечательности находятся очень близко</p>
+            <li class="advantages__item advantages__item_photo advantages__item_inverse">
+              <div class="advantages__advantage">
+                <h3 class="advantage__name ">Там есть мост дьявола</h3>
+                <p class="advantage__description">Все достопримечательности находятся очень близко</p>
               </div>
               <img class="advantages__photo" src="images/advantages/advantage-2.jpg" alt="Каньон, горы, снова горы." width="800" height="385">
             </li>
@@ -98,17 +104,23 @@
           </div>
 
           <ul class="services__list">
-            <li class="services__item service__item_blue services__item_home">
-              <h3 class="services__name">Жильё</h3>
-              <p class="services__description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+            <li class="services__item service__item_blue">
+              <div class="services__service services__service_home">
+                <h3 class="service__name">Жильё</h3>
+                <p class="service__description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+              </div>
             </li>
-            <li class="services__item services__item_food">
-              <h3 class="services__name">Еда</h3>
-              <p class="services__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <li class="services__item ">
+              <div class="services__service services__service_food">
+                <h3 class="service__name">Еда</h3>
+                <p class="service__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
-            <li class="services__item service__item_blue services__item_presents">
-              <h3 class="services__name">Сувениры</h3>
-              <p class="services__description">Не только китайского, но и настоящего местного производства!</p>
+            <li class="services__item service__item_blue">
+              <div class="services__service services__service_presents">
+                <h3 class="service__name">Сувениры</h3>
+                <p class="service__description">Не только китайского, но и настоящего местного производства!</p>
+              </div>
             </li>
           </ul>
         </section>
