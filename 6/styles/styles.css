@@ -163,12 +163,11 @@ img {
 
 .hero {
   background-image: url("../images/backgrounds/divider.svg"), url("../images/backgrounds/index.jpg");
-  background-size: auto, cover;
+  background-size: contain, cover;
   background-position: bottom;
-  min-height: 485px;
+  min-height: 484px;
   color: #FFFFFF;
   background-color: #DDEBF4;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -1045,11 +1044,11 @@ img {
 }
 
 .rating_4:before {
-  width: 90px;
+  width: 89px;
 }
 
 .rating_5:before {
-  width: 114px;
+  width: 105px;
 }
 
 .result__rating {
