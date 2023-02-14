@@ -1025,7 +1025,31 @@ img {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "rating_stars rating_text";
+}
+
+.result__ratings:before {
+  content: "";
+  background-image: url("../images/rating/star.svg");
+  background-repeat: space no-repeat;
+  display: block;
+  margin: 10px 0;
+  width: 18px;
+}
+
+.rating_2:before {
+  width: 42px;
+}
+
+.rating_3:before {
+  width: 66px;
+}
+
+.rating_4:before {
+  width: 90px;
+}
+
+.rating_5:before {
+  width: 114px;
 }
 
 .result__rating {
@@ -1040,31 +1064,6 @@ img {
   display: block;
   width: 100%;
   padding: 9px 0 8px 0;
-  grid-area: rating_text;
-}
-
-.result__rating::before {
-
-}
-
-.rating_1 {
-
-}
-
-.rating_2 {
-
-}
-
-.rating_3 {
-
-}
-
-.rating_4 {
-
-}
-
-.rating_5 {
-
 }
 
 .pagination {
