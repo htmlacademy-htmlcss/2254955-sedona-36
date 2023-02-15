@@ -95,7 +95,7 @@ img {
 }
 
 .navigation__item {
-  height: 64px;
+  min-height: 64px;
 }
 
 .navigation__item_button {
@@ -112,7 +112,7 @@ img {
   text-decoration: none;
   color: inherit;
   display: block;
-  position: relative;
+  height: 100%;
 }
 
 .navigation__link_text {
