@@ -54,7 +54,7 @@ img {
 }
 
 .page {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 1200px;
@@ -100,7 +100,7 @@ img {
 
 .navigation__item_button {
   padding: 14px 0 14px 20px;
-  width: 180px;
+  min-width: 180px;
   text-align: center;
 }
 
@@ -193,7 +193,6 @@ img {
 }
 
 .advantages {
-  background-color: #FFFFFF;
 }
 
 .advantages__container {
@@ -265,6 +264,7 @@ img {
 .advantages__advantage {
   padding: 102px 85px;
   text-align: center;
+  width: 400px;
 }
 
 .advantage__name {
@@ -290,7 +290,6 @@ img {
 }
 
 .services {
-  background-color: #FFFFFF;
 }
 
 .services__container {
@@ -328,7 +327,6 @@ img {
 .services__item {
   width: 400px;
   min-height: 385px;
-  background-color: #FFFFFF;
   display: flex;
 }
 
@@ -378,7 +376,6 @@ img {
 }
 
 .search {
-  background-color: #FFFFFF;
   padding: 96px 304px;
 }
 
@@ -495,6 +492,8 @@ img {
   border-radius: 4px 0px 0px 4px;
   width: 452px;
   height: 52px;
+  padding: 5px;
+  word-break: break-word;
 }
 
 .newsletter__email::placeholder {
@@ -530,14 +529,14 @@ img {
   list-style: none;
   padding: 5px 0 5px 0;
   margin: 0;
-  display: inline-flex;
+  display: flex;
   width: 184px;
 }
 
 .social__item {
   display: block;
-  width: 47px;
-  height: 40px;
+  min-width: 47px;
+  min-height: 40px;
   position: relative;
 }
 
@@ -571,14 +570,12 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  display: inline-block;
   box-sizing: border-box;
   padding: 5px 195px 5px 194px;
   margin: 0;
 }
 
 .about {
-  display: inline-block;
   width: 156px;
 }
 
@@ -1087,9 +1084,8 @@ img {
 }
 
 .pagination__item {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 .pagination__link {
