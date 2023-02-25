@@ -9,7 +9,7 @@
     <div class="page">
       <header class="header__container">
         <a class="header__link" href="index.html">
-          <img class="header__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="138" height="64">
+          <img class="header__logo" src="images/logo.svg" alt="Логотип города «Седона»." width="140" height="70">
         </a>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -48,7 +48,6 @@
         <section class="catalog__header">
           <div class="breadcrumbs">
             <h1 class="catalog__title">Гостиницы Седоны</h1>
-            <h2 class="visually-hidden">Фильтры для гостиниц.</h2>
 
             <ol class="breadcrumbs__list">
               <li class="breadcrumbs__item breadcrumbs__item_home">
@@ -64,75 +63,72 @@
 
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
 
-            <div class="filter__container">
+            <fieldset class="infrastructure">
+              <legend class="infrastructure__title">Инфраструктура:</legend>
+              <ul class="infrastructure__list">
+                <li class="infrastructure__item">
+                  <label class="infrastructure__description">
+                    <input class="infrastructure__checkbox" type="checkbox" name="pool" checked>
+                    <span class="infrastructure__name">Бассейн</span>
+                  </label>
+                </li>
+                <li class="infrastructure__item">
+                  <label class="infrastructure__description">
+                    <input class="infrastructure__checkbox" type="checkbox" name="parking" checked>
+                    <span class="infrastructure__name">Парковка</span>
+                  </label>
+                </li>
+                <li class="infrastructure__item">
+                  <label class="infrastructure__description">
+                    <input class="infrastructure__checkbox" type="checkbox" name="wi-fi">
+                    <span class="infrastructure__name">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="infrastructure">
-                <legend class="infrastructure__title">Инфраструктура:</legend>
-                <ul class="infrastructure__list">
-                  <li class="infrastructure__item">
-                    <label class="infrastructure__description">
-                      <input class="infrastructure__checkbox" type="checkbox" name="pool" checked>
-                      <span class="infrastructure__name">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="infrastructure__item">
-                    <label class="infrastructure__description">
-                      <input class="infrastructure__checkbox" type="checkbox" name="parking" checked>
-                      <span class="infrastructure__name">Парковка</span>
-                    </label>
-                  </li>
-                  <li class="infrastructure__item">
-                    <label class="infrastructure__description">
-                      <input class="infrastructure__checkbox" type="checkbox" name="wi-fi">
-                      <span class="infrastructure__name">Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="type">
+              <legend class="type__title">Тип жилья:</legend>
+              <ul class="type__list">
+                <li class="type__item">
+                  <label class="type__description">
+                    <input class="type__field" type="radio" name="hotel-type" value="hotel" checked>
+                    <span class="type__name">Гостиница</span>
+                  </label>
+                </li>
+                <li class="type__item">
+                  <label class="type__description">
+                    <input class="type__field" type="radio" name="hotel-type" value="motel">
+                    <span class="type__name">Мотель</span>
+                  </label>
+                </li>
+                <li class="type__item">
+                  <label class="type__description">
+                    <input class="type__field" type="radio" name="hotel-type" value="apartments">
+                    <span class="type__name">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="type">
-                <legend class="type__title">Тип жилья:</legend>
-                <ul class="type__list">
-                  <li class="type__item">
-                    <label class="type__description">
-                      <input class="type__field" type="radio" name="hotel-type" value="hotel" checked>
-                      <span class="type__name">Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="type__item">
-                    <label class="type__description">
-                      <input class="type__field" type="radio" name="hotel-type" value="motel">
-                      <span class="type__name">Мотель</span>
-                    </label>
-                  </li>
-                  <li class="type__item">
-                    <label class="type__description">
-                      <input class="type__field" type="radio" name="hotel-type" value="apartments">
-                      <span class="type__name">Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+            <fieldset class="price">
+              <legend class="price__title">Стоимость, ₽:</legend>
+              <ul class="price__list">
+                <li class="price__item">
+                  <label class="visually-hidden" for="price-min-input">Максимальная цена.</label>
+                  <input class="price__field price__field_min" type="number" name="hotel-type-price-from" id="price-min-input" value="0">
+                </li>
+                <li class="price__item price__item_max">
+                  <label class="visually-hidden" for="price-max-input">Максимальная цена.</label>
+                  <input class="price__field price__field_max" type="number" name="hotel-type-price-to" id="price-max-input" value="9000">
+                </li>
+              </ul>
 
-              <fieldset class="price">
-                <legend class="price__title">Стоимость, ₽:</legend>
-                <ul class="price__list">
-                  <li class="price__item">
-                    <label class="visually-hidden" for="price-min-input">Максимальная цена.</label>
-                    <input class="price__field price__field_min" type="number" name="hotel-type-price-from" id="price-min-input" value="0">
-                  </li>
-                  <li class="price__item price__item_max">
-                    <label class="visually-hidden" for="price-max-input">Максимальная цена.</label>
-                    <input class="price__field price__field_max" type="number" name="hotel-type-price-to" id="price-max-input" value="9000">
-                  </li>
-                </ul>
+            </fieldset>
 
-              </fieldset>
-
-              <div class="filter__buttons">
-                <button class="button button_blue" type="submit">Применить</button>
-                <button class="button button_text" type="reset">Сбросить</button>
-              </div>
+            <div class="filter__buttons">
+              <button class="button button_blue" type="submit">Применить</button>
+              <button class="button button_text" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -168,74 +164,64 @@
             </ul>
           </div>
 
-          <div class="result">
-            <ul class="result__list">
-              <li class="result__item">
-                <div class="result__header">
-                  <a class="result__link" href="#">
-                    <img class="result__image" src="images/hotels/hotel-1.jpg" alt="Звёздное небо в расщелине гор." width="300" height="212">
-                  </a>
-                  <h3 class="result__title">Amara Resort & Spa</h3>
-                </div>
-                <p class="result__type">Гостиница</p>
-                <b class="result__price">От 4000 ₽</b>
-                <a class="result__details" href="#">Подробнее</a>
-                <button class="button button_blue result__favourite" type="button">В избранное</button>
-                <p class="result__icon result__icon_rating4">
-                  <span class="visually-hidden">4 звезды.</span>
-                </p>
-                <span class="result__rating">Рейтинг: 8,5</span>
-              </li>
-              <li class="result__item">
-                <div class="result__header">
-                  <a class="result__link" href="#">
-                    <img class="result__image" src="images/hotels/hotel-2.jpg" alt="Радуга над горным хребтом." width="300" height="212">
-                  </a>
-                  <h3 class="result__title">Villas at Poco Diablo</h3>
-                </div>
-                <p class="result__type">Гостиница</p>
-                <b class="result__price">От 5000 ₽</b>
-                <a class="result__details" href="#">Подробнее</a>
-                <button class="button button_green result__favourite" type="button">В избранном</button>
-                <p class="result__icon result__icon_rating4">
-                  <span class="visually-hidden">4 звезды.</span>
-                </p>
-                <span class="result__rating">Рейтинг: 9,2</span>
-              </li>
-              <li class="result__item">
-                <div class="result__header">
-                  <a class="result__link" href="#">
-                    <img class="result__image" src="images/hotels/hotel-3.jpg" alt="Горы на фоне голубого неба." width="300" height="212">
-                  </a>
-                  <h3 class="result__title">Desert Quail Inn</h3>
-                </div>
-                <p class="result__type">Гостиница</p>
-                <b class="result__price">От 2500 ₽</b>
-                <a class="result__details" href="#">Подробнее</a>
-                <button class="button button_blue result__favourite" type="button">В избранное</button>
-                <p class="result__icon result__icon_rating3">
-                  <span class="visually-hidden">3 звезды.</span>
-                </p>
-                <span class="result__rating">Рейтинг: 6,9</span>
-              </li>
-              <li class="result__item">
-                <div class="result__header">
-                  <a class="result__link" href="#">
-                    <img class="result__image" src="images/hotels/hotel-4.jpg" alt="Гора на фоне звёздного неба." width="300" height="212">
-                  </a>
-                  <h3 class="result__title">GreenTree Inn</h3>
-                </div>
-                <p class="result__type">Гостиница</p>
-                <b class="result__price">От 1500 ₽</b>
-                <a class="result__details" href="#">Подробнее</a>
-                <button class="button button_blue result__favourite" type="button">В избранное</button>
-                <p class="result__icon result__icon_rating2">
-                  <span class="visually-hidden">2 звезды.</span>
-                </p>
-                <span class="result__rating">Рейтинг: 5,0</span>
-              </li>
-            </ul>
-          </div>
+          <ul class="result">
+            <li class="result__item">
+              <a class="result__link" href="#">
+                <img class="result__image" src="images/hotels/hotel-1.jpg" alt="Звёздное небо в расщелине гор." width="300" height="212">
+                <h3 class="result__title">Amara Resort & Spa</h3>
+              </a>
+              <p class="result__type">Гостиница</p>
+              <b class="result__price">От 4000 ₽</b>
+              <a class="result__details" href="#">Подробнее</a>
+              <button class="button button_blue result__favourite" type="button">В избранное</button>
+              <p class="result__icon result__icon_rating4">
+                <span class="visually-hidden">4 звезды.</span>
+              </p>
+              <span class="result__rating">Рейтинг: 8,5</span>
+            </li>
+            <li class="result__item">
+              <a class="result__link" href="#">
+                <img class="result__image" src="images/hotels/hotel-2.jpg" alt="Радуга над горным хребтом." width="300" height="212">
+                <h3 class="result__title">Villas at Poco Diablo</h3>
+              </a>
+              <p class="result__type">Гостиница</p>
+              <b class="result__price">От 5000 ₽</b>
+              <a class="result__details" href="#">Подробнее</a>
+              <button class="button button_green result__favourite" type="button">В избранном</button>
+              <p class="result__icon result__icon_rating4">
+                <span class="visually-hidden">4 звезды.</span>
+              </p>
+              <span class="result__rating">Рейтинг: 9,2</span>
+            </li>
+            <li class="result__item">
+              <a class="result__link" href="#">
+                <img class="result__image" src="images/hotels/hotel-3.jpg" alt="Горы на фоне голубого неба." width="300" height="212">
+                <h3 class="result__title">Desert Quail Inn</h3>
+              </a>
+              <p class="result__type">Гостиница</p>
+              <b class="result__price">От 2500 ₽</b>
+              <a class="result__details" href="#">Подробнее</a>
+              <button class="button button_blue result__favourite" type="button">В избранное</button>
+              <p class="result__icon result__icon_rating3">
+                <span class="visually-hidden">3 звезды.</span>
+              </p>
+              <span class="result__rating">Рейтинг: 6,9</span>
+            </li>
+            <li class="result__item">
+              <a class="result__link" href="#">
+                <img class="result__image" src="images/hotels/hotel-4.jpg" alt="Гора на фоне звёздного неба." width="300" height="212">
+                <h3 class="result__title">GreenTree Inn</h3>
+              </a>
+              <p class="result__type">Гостиница</p>
+              <b class="result__price">От 1500 ₽</b>
+              <a class="result__details" href="#">Подробнее</a>
+              <button class="button button_blue result__favourite" type="button">В избранное</button>
+              <p class="result__icon result__icon_rating2">
+                <span class="visually-hidden">2 звезды.</span>
+              </p>
+              <span class="result__rating">Рейтинг: 5,0</span>
+            </li>
+          </ul>
 
         </section>
 
@@ -283,19 +269,19 @@
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Мы ВКонтакте.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="41" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M35.12 14.8c.16-.54 0-.94-.8-.94H31.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95h-4.13c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1h-2.62c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" clip-rule="evenodd"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" clip-rule="evenodd"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Telegram.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="41" fill="none"><path fill="#83B3D3" d="M31.79 12.96 15.84 19.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.7l2.72-12.8c.28-1.12-.43-1.62-1.15-1.3Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path fill="#83B3D3" d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в Youtube.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="41" fill="none"><path fill="#83B3D3" d="M31.94 12.36H16.51c-1.86 0-3.18 1.59-3.18 3.4v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4v-10.2c-.22-1.8-1.53-3.4-3.39-3.4ZM20.99 24.89v-8.07l7.34 4.04-7.34 4.03Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path fill="#83B3D3" d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/></svg>
               </a>
             </li>
           </ul>
