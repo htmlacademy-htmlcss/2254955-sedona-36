@@ -1096,7 +1096,7 @@ img {
 
 }
 
-.price__field{
+.price__field {
   width: 143px;
   min-height: 48px;
   font-weight: 700;
@@ -1106,17 +1106,21 @@ img {
   padding-right: 50px;
 }
 
+.price__field:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .price__field_min {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border-style: none;
+  margin-right: 2px;
 }
 
 .price__field_max {
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
   border-style: none;
-  border-left-style: solid;
 }
 
 .filter__buttons {
