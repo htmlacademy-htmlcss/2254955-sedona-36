@@ -1261,6 +1261,10 @@ img {
   border: 2px solid #000000;
 }
 
+.view__item:focus {
+  border: 2px solid #68A2CA;
+}
+
 .view__item:active {
   border: 2px solid #000000;
 }
