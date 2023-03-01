@@ -112,6 +112,7 @@ img {
 .button_text:focus {
   border: 3px solid #83B3D3;
   padding: 5px 12px;
+  outline: none;
 }
 
 .button_text:active {
