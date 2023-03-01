@@ -96,6 +96,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button_blue:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 .button_text {
   background-color: transparent;
 }
@@ -113,6 +118,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button_text:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 .button_green {
   background-color: #7DB54F;
 }
@@ -127,6 +137,11 @@ img {
 
 .button_green:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button_green:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .header__container {
@@ -276,8 +291,9 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation__link_button:disabled {
+.navigation__link_disabled {
   background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .navigation__user {
@@ -555,6 +571,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.search__link_disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 .newsletter {
   background-color: #89ABB8;
   padding: 96px 258px 104px 258px;
@@ -649,6 +670,11 @@ img {
   width: 232px;
   border-style: none;
   border-radius: 0 4px 4px 0;
+}
+
+.newsletter__button_disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .newsletter__button:hover {
@@ -1264,7 +1290,8 @@ img {
   list-style: none;
   background-color: #FFFFFF;
   margin: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -1354,6 +1381,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.result__details_disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 .result__icon {
   background-image: url("../images/rating/star.svg");
   background-repeat: space no-repeat;
@@ -1425,6 +1457,11 @@ img {
   display: block;
   width: 100%;
   padding: 12px 12px;
+}
+
+.pagination__link_disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .pagination__current {
