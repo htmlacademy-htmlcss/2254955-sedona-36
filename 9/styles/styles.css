@@ -642,6 +642,7 @@ img {
 }
 
 .newsletter__email {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -656,10 +657,27 @@ img {
 }
 
 .newsletter__email::placeholder {
+  font-family: inherit;
   color: rgba(0, 0, 0, 0.6);
 }
 
+.newsletter__email:hover {
+  background: #E6E6E6;
+}
+
+.newsletter__email:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.newsletter__email:not(:placeholder-shown) {
+  background: #F2F2F2;
+  border: 2px solid #000000;
+  outline: none;
+}
+
 .newsletter__button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -805,7 +823,7 @@ img {
   line-height: 78px;
   color: #FFFFFF;
   margin: 0 0 8px 0;
-  padding: 0;
+  padding-left: 5px;
 }
 
 .catalog__header {
@@ -831,18 +849,17 @@ img {
 }
 
 .breadcrumbs__item {
-  display: block;
   color: #FFFFFF;
-  padding-right: 18px;
+  padding-right: 13px;
   height: 21px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .breadcrumbs__item::after {
   position: absolute;
   bottom: calc(50% - 5px);
-  left: calc(100% - 8px);
+  right: 0;
   width: 8px;
   height: 11px;
   content: "";
@@ -865,29 +882,31 @@ img {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
-  width: 100%;
-  height: 100%;
+  min-width: 20px;
+  min-height: 21px;
+  padding: 0 5px;
 }
 
-.breadcrumbs__item_home {
+.breadcrumbs__link_home {
   background-image: url("../images/breadcrumbs/home.svg");
   width: 13px;
   height: 15px;
   background-repeat: no-repeat;
-  background-position: left;
-  min-width: 31px;
-  padding: 3px 1px 3px 1px;
+  background-position: center;
+  background-size: 12px 12px;
+  min-width: 21px;
+  padding: 8px 5px;
 }
 
-.breadcrumbs__item_home:hover {
+.breadcrumbs__link_home:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs__item_home:focus {
+.breadcrumbs__link_home:focus {
   opacity: 0.45;
 }
 
-.breadcrumbs__item_home:active {
+.breadcrumbs__link_home:active {
   opacity: 0.3;
 }
 
@@ -928,11 +947,57 @@ img {
   margin-bottom: 0;
 }
 
+.infrastructure__label {
+  position: relative;
+  display: block;
+}
+
+.infrastructure__label:hover {
+  opacity: 0.6;
+}
+
+.infrastructure__label:active {
+  opacity: 0.3;
+}
+
+.infrastructure__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.infrastructure__checkbox {
+  position: absolute;
+  outline: none;
+  clip: rect(0,0,0,0);
+}
+
+.infrastructure__checkbox:focus ~ .infrastructure__mark {
+  outline: 3px solid #83B3D3;
+}
+
+.infrastructure__checkbox:checked ~ .infrastructure__mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/forms/checked.svg);
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
 .infrastructure__name {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  margin-left: 36px;
 }
 
 .type {
@@ -963,6 +1028,60 @@ img {
 
 .type__item:last-child {
   margin-bottom: 0;
+}
+
+.type__label {
+  position: relative;
+  display: block;
+}
+
+.type__label:hover {
+  opacity: 0.6;
+}
+
+.type__label:active {
+  opacity: 0.3;
+}
+
+.type__radio {
+  position: absolute;
+  outline: none;
+  clip: rect(0,0,0,0);
+}
+
+.type__mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.type__radio:focus ~ .type__mark {
+  outline: 3px solid #83B3D3;
+}
+
+.type__radio:checked + .type__mark::before {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
+.type__name {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-left: 36px;
 }
 
 .price {
@@ -1006,6 +1125,7 @@ img {
 }
 
 .price__field {
+  font-family: inherit;
   width: 143px;
   min-height: 48px;
   font-weight: 700;
@@ -1129,6 +1249,7 @@ img {
 }
 
 .sorting__order {
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1151,7 +1272,7 @@ img {
 }
 
 .sorting__order:focus {
-  border: 2px solid #3F5E72;
+  border: 2px solid #68A2CA;
   outline: none;
 }
 
