@@ -661,6 +661,21 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.newsletter__email:hover {
+  background: #E6E6E6;
+}
+
+.newsletter__email:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.newsletter__email:not(:placeholder-shown) {
+  background: #F2F2F2;
+  border: 2px solid #000000;
+  outline: none;
+}
+
 .newsletter__button {
   font-family: inherit;
   font-weight: 700;
@@ -1257,7 +1272,7 @@ img {
 }
 
 .sorting__order:focus {
-  border: 2px solid #3F5E72;
+  border: 2px solid #68A2CA;
   outline: none;
 }
 
