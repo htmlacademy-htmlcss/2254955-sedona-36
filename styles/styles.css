@@ -928,66 +928,6 @@ img {
   margin-bottom: 0;
 }
 
-.checkbox {
-  display: flex;
-  position: relative;
-}
-
-.checkbox__input {
-  position: absolute;
-  outline: none;
-  clip: rect(0,0,0,0);
-}
-
-.checkbox__state {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox__control {
-  box-sizing: border-box;
-  background: #FFFFFF;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-}
-
-.checkbox__icon {
-  display: none;
-  width: 12px;
-  height: 10px;
-  color: #3F5E72;
-}
-
-.checkbox__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-}
-
-.checkbox:hover {
-  opacity: 0.6;
-}
-
-.checkbox__input:focus ~ .checkbox__state .checkbox__control {
-  outline: 3px solid #83B3D3;
-}
-
-.checkbox__input:active ~ .checkbox__state .checkbox__control {
-  outline: 2px solid #83B3D3;
-  opacity: 0.3;
-}
-
-.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
-  display: block;
-}
-
 .infrastructure__name {
   font-weight: 400;
   font-size: 18px;
@@ -1023,66 +963,6 @@ img {
 
 .type__item:last-child {
   margin-bottom: 0;
-}
-
-.radio {
-  display: inline-flex;
-  position: relative;
-}
-
-.radio__input {
-  position: absolute;
-  outline: none;
-  clip: rect(0,0,0,0);
-}
-
-.radio__state {
-  display: flex;
-  align-items: center;
-}
-
-.radio__control {
-  background: #FFFFFF;
-  border-radius: 50%;
-  border: 3px solid #FFFFFF;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 16px;
-}
-
-.radio__inner {
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-  border-radius: 50%;
-}
-
-.radio__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #FFFFFF;
-}
-
-.radio__input:checked ~ .radio__state .radio__inner {
-  background: #3F5E72;
-}
-
-.radio:hover {
-  opacity: 0.6;
-}
-
-.radio__input:focus ~ .radio__state .radio__control {
-  outline: 3px solid #83B3D3;
-}
-
-.radio__input:active ~ .radio__state .radio__control {
-  outline: 2px solid #83B3D3;
-  opacity: 0.3;
 }
 
 .price {
