@@ -50,8 +50,8 @@
             <h1 class="catalog__title">Гостиницы Седоны</h1>
 
             <ol class="breadcrumbs__list">
-              <li class="breadcrumbs__item breadcrumbs__item_home">
-                <a class="breadcrumbs__link" href="index.html">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link_home" href="index.html">
                   <span class="visually-hidden">На главную.</span>
                 </a>
               </li>
@@ -67,20 +67,23 @@
               <legend class="infrastructure__title">Инфраструктура:</legend>
               <ul class="infrastructure__list">
                 <li class="infrastructure__item">
-                  <label class="infrastructure__description">
+                  <label class="infrastructure__label">
                     <input class="infrastructure__checkbox" type="checkbox" name="pool" checked>
+                    <span class="infrastructure__mark"></span>
                     <span class="infrastructure__name">Бассейн</span>
                   </label>
                 </li>
                 <li class="infrastructure__item">
-                  <label class="infrastructure__description">
+                  <label class="infrastructure__label">
                     <input class="infrastructure__checkbox" type="checkbox" name="parking" checked>
+                    <span class="infrastructure__mark"></span>
                     <span class="infrastructure__name">Парковка</span>
                   </label>
                 </li>
                 <li class="infrastructure__item">
-                  <label class="infrastructure__description">
+                  <label class="infrastructure__label">
                     <input class="infrastructure__checkbox" type="checkbox" name="wi-fi">
+                    <span class="infrastructure__mark"></span>
                     <span class="infrastructure__name">Wi-Fi</span>
                   </label>
                 </li>
@@ -91,20 +94,23 @@
               <legend class="type__title">Тип жилья:</legend>
               <ul class="type__list">
                 <li class="type__item">
-                  <label class="type__description">
-                    <input class="type__field" type="radio" name="hotel-type" value="hotel" checked>
+                  <label class="type__label">
+                    <input class="type__radio" type="radio" name="hotel-type" value="hotel" checked>
+                    <span class="type__mark"></span>
                     <span class="type__name">Гостиница</span>
                   </label>
                 </li>
                 <li class="type__item">
-                  <label class="type__description">
-                    <input class="type__field" type="radio" name="hotel-type" value="motel">
+                  <label class="type__label">
+                    <input class="type__radio" type="radio" name="hotel-type" value="motel">
+                    <span class="type__mark"></span>
                     <span class="type__name">Мотель</span>
                   </label>
                 </li>
                 <li class="type__item">
-                  <label class="type__description">
-                    <input class="type__field" type="radio" name="hotel-type" value="apartments">
+                  <label class="type__label">
+                    <input class="type__radio" type="radio" name="hotel-type" value="apartments">
+                    <span class="type__mark"></span>
                     <span class="type__name">Апартаменты</span>
                   </label>
                 </li>
