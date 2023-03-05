@@ -984,7 +984,7 @@ img {
 .price__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 36px;
+  margin: 0 0 44px;
   display: flex;
 }
 
@@ -1015,6 +1015,12 @@ img {
   padding-right: 50px;
 }
 
+.price__field::-webkit-outer-spin-button,
+.price__field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .price__field:focus {
   outline: 3px solid #83B3D3;
 }
@@ -1030,6 +1036,51 @@ img {
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
   border-style: none;
+}
+
+.range__scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range__toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range__toggle:focus {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range__toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle__min {
+  top: -8px;
+}
+
+.toggle__max {
+  top: -8px;
+  right: 0;
 }
 
 .filter__buttons {
