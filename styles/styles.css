@@ -1577,6 +1577,10 @@ img {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
+.modal__container_close {
+  display: none;
+}
+
 .modal__close {
   display: inline;
   border-style: none;
@@ -1593,6 +1597,24 @@ img {
   cursor: pointer;
 }
 
+.modal__close:hover {
+  background-color: #E6E6E6;
+}
+
+.modal__close:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal__close:active {
+  outline: none;
+  opacity: 0.3;
+}
+
+.modal__close:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1607,7 +1629,6 @@ img {
 }
 
 .modal__title {
-  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1630,24 +1651,22 @@ img {
   margin-top: 23px;
 }
 
-.modal__error {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FF5757;
-  margin-left: 137px;
-  padding: 0 20px;
+.description__wrapper {
+  padding: 0 69px 0 157px;
+  margin: 0;
 }
 
 .modal__description {
+  width: 320px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  margin-left: 137px;
-  padding: 0 20px;
+}
+
+.modal__error {
+  color: #FF5757;
 }
 
 .modal__label {
@@ -1668,13 +1687,40 @@ img {
 }
 
 .modal__input {
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
   gap: 260px;
   width: 440px;
   height: 48px;
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal__input::placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__input:hover {
+  background-color: rgba(230, 230, 230, 0.3);
+  opacity: 0.6;
+}
+
+.modal__input:focus {
+  background-color: rgba(230, 230, 230, 0.3);
+  outline: 3px solid #83B3D3;
+  border: none;
+}
+
+.modal__input:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .modal__visitors {
@@ -1706,6 +1752,47 @@ img {
   margin: 14px 10px;
   border: transparent;
   cursor: pointer;
+  position: relative;
+}
+
+.quantity__button_minus {
+  background-image: url("../images/modal/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quantity__button_minus:hover {
+  background-image: url("../images/modal/minus_black.svg");
+}
+
+.quantity__button_minus:focus {
+  background-image: url("../images/modal/minus_black.svg");
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.quantity__button_minus:active {
+  background-image: url("../images/modal/minus.svg");
+}
+
+.quantity__button_plus {
+  background-image: url("../images/modal/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quantity__button_plus:hover {
+  background-image: url("../images/modal/plus_black.svg");
+}
+
+.quantity__button_plus:focus {
+  background-image: url("../images/modal/plus_black.svg");
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.quantity__button_plus:active {
+  background-image: url("../images/modal/plus.svg");
 }
 
 .quantity__input {
@@ -1722,14 +1809,14 @@ img {
 }
 
 .modal__button_search {
-  width: 577px;
-  height: 60px;
+  max-width: 577px;
+  min-height: 60px;
   left: 0px;
   top: 288px;
   background: #83B3D3;
   border-radius: 10px;
   border: none;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1738,10 +1825,15 @@ img {
   color: #FFFFFF;
 }
 
+modal__button_search:hover {
+
+}
+
 .quantity__input {
   width: 31px;
   padding: 5px 5px;
   text-align: center;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1757,27 +1849,11 @@ img {
   margin: 0;
 }
 
-.modal__input_calendar path {
+.modal__input_calendar {
   appearance: none;
   background-image: url("../images/modal/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-}
-
-quantity__button {
-  position: absolute;
-}
-
-.quantity__button_minus {
-  background-image: url("../images/modal/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.quantity__button_plus {
-  background-image: url("../images/modal/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .visitors__children {

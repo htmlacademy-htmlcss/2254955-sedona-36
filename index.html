@@ -184,7 +184,7 @@
       </footer>
     </div>
 
-    <div class="modal__container">
+    <div class="modal__container modal__container_close">
       <div class="modal modal__search">
         <button class="modal__close">
           <span class="visually-hidden">Закрыть</span>
@@ -194,14 +194,18 @@
           <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
             <p class="modal__wrapper">
               <label class="modal__label modal__label_long" for="arrival-date">Дата заезда:</label>
-              <input class="modal__input modal__input_calendar" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+              <input class="modal__input modal__input_calendar" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
             </p>
-            <span class="modal__error">Мы не можем отправить вас в прошлое.</span>
+            <p class="description__wrapper">
+              <span class="modal__description modal__error">Мы не можем отправить вас в прошлое.</span>
+            </p>
             <p class="modal__wrapper">
-              <label class="modal__label" for="departure-date">Дата выезда:</label>
-              <input class="modal__input modal__input_calendar" type="text" id="departure-date" name="departure-date" value="1 сентября 2023">
+              <label class="modal__label modal__label_long" for="departure-date">Дата выезда:</label>
+              <input class="modal__input modal__input_calendar" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
             </p>
-            <span class="modal__description">На эти даты есть свободные номера. Пока есть.</span>
+            <p class="description__wrapper">
+              <span class="modal__description">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
             <div class="modal__visitors">
               <div class="visitors__wrapper">
                 <label class="modal__label modal__label_long" for="quantity-adult">Взрослые:</label>
@@ -236,7 +240,7 @@
                 </div>
               </div>
             </div>
-            <button class="modal__button_search" type="submit">Найти</button>
+            <button class="button button_blue modal__button_search" type="submit">Найти</button>
           </form>
         </section>
       </div>
