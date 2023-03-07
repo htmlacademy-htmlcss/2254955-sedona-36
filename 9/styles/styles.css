@@ -43,7 +43,7 @@ img {
   box-sizing: border-box;
 }
 
-.visually-hidden {
+.visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -319,9 +319,6 @@ img {
 .hero__logo {
   display: block;
   margin: 0 auto;
-}
-
-.advantages {
 }
 
 .advantages__container {
@@ -1823,10 +1820,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-modal__button_search:hover {
-
 }
 
 .quantity__input {
