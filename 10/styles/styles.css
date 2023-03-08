@@ -541,7 +541,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0 0 53px;
+  margin: 0 0 54px;
   padding: 0;
 }
 
@@ -1219,10 +1219,12 @@ img {
 
 .catalog {
   background-color: #FFFFFF;
+  border-bottom: 1px solid #E6E6E6;
+  margin: 0 70px;
 }
 
 .sorting {
-  padding: 50px 70px 40px 70px;
+  padding: 50px 0 40px 0;
   display: flex;
   align-items: center;
 }
@@ -1348,7 +1350,7 @@ img {
 }
 
 .result {
-  padding: 0 70px 40px 70px;
+  padding: 0 0 40px 0;
   list-style: none;
   background-color: #FFFFFF;
   margin: 0;
@@ -1486,7 +1488,7 @@ img {
 
 .pagination {
   background-color: #FFFFFF;
-  padding: 40px 70px 60px 70px;
+  padding: 39px 70px 60px 70px;
 }
 
 .pagination__list {
