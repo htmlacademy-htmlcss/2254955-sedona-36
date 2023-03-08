@@ -218,6 +218,10 @@ img {
   opacity: 30%;
 }
 
+.navigation__item_current {
+  pointer-events: none;
+}
+
 .navigation__link_text {
   padding: 20px 16px;
 }
@@ -323,7 +327,7 @@ img {
 }
 
 .advantages__container {
-  padding: 69px 270px 90px;
+  padding: 69px 272px 90px;
 }
 
 .advantages__title {
@@ -409,7 +413,7 @@ img {
 }
 
 .advantages__text {
-  padding: 112px 80px;
+  padding: 112px 84px;
   text-align: center;
   width: 400px;
 }
@@ -472,6 +476,7 @@ img {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .services__item {
@@ -953,6 +958,7 @@ img {
 .infrastructure__label {
   position: relative;
   display: block;
+  padding-left: 36px;
 }
 
 .infrastructure__label:hover {
@@ -961,6 +967,18 @@ img {
 
 .infrastructure__label:active {
   opacity: 0.3;
+}
+
+.infrastructure__label_disabled {
+  pointer-events: none;
+}
+
+.infrastructure__label_disabled .infrastructure__mark {
+  background-color: #808080;
+}
+
+.infrastructure__label_disabled .infrastructure__name {
+  color: #808080;
 }
 
 .infrastructure__mark {
@@ -1000,7 +1018,6 @@ img {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  margin-left: 36px;
 }
 
 .type {
@@ -1038,6 +1055,7 @@ img {
 .type__label {
   position: relative;
   display: block;
+  padding-left: 36px;
 }
 
 .type__label:hover {
@@ -1046,6 +1064,18 @@ img {
 
 .type__label:active {
   opacity: 0.3;
+}
+
+.type__label_disabled {
+  pointer-events: none;
+}
+
+.type__label_disabled .type__mark {
+  background-color: #808080;
+}
+
+.type__label_disabled .type__name {
+  color: #808080;
 }
 
 .type__radio {
@@ -1085,7 +1115,6 @@ img {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
-  margin-left: 36px;
 }
 
 .price {
@@ -1137,6 +1166,8 @@ img {
   line-height: 24px;
   padding-left: 20px;
   padding-right: 50px;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 .price__field::-webkit-outer-spin-button,
@@ -1532,18 +1563,6 @@ img {
   background-color: #F2F2F2;
 }
 
-.pagination__current:hover {
-  opacity: 0.6;
-}
-
-.pagination__current:focus {
-  opacity: 0.45;
-}
-
-.pagination__current:active {
-  opacity: 0.3;
-}
-
 .pagination__link_dots {
   color: #000000;
   background-color: #FFFFFF;
@@ -1561,6 +1580,11 @@ img {
 .pagination__link_dots:active {
   opacity: 0.3;
 }
+
+.pagination__link_blue {
+  border: 1px solid #82B3D3;
+}
+
 
 .pagination__link_blue:hover,
 .pagination__link_blue:focus {
@@ -1759,6 +1783,7 @@ img {
   margin: 13px 10px 14px 10px;
   border: transparent;
   cursor: pointer;
+  background-color: #F2F2F2;
 }
 
 .quantity__button_minus {
