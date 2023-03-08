@@ -319,6 +319,7 @@ img {
 .hero__logo {
   display: block;
   margin: 0 auto;
+  color: #000000;
 }
 
 .advantages__container {
