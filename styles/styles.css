@@ -155,6 +155,14 @@ img {
   position: absolute;
 }
 
+.header__link_state:hover {
+  opacity: 0.6;
+}
+
+.header__link_state:active {
+  opacity: 0.3;
+}
+
 .header__logo {
   display: block;
 }
