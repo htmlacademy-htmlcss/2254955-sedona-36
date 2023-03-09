@@ -1668,11 +1668,20 @@ img {
   width: 52px;
   height: 52px;
   border-radius: 50%;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.modal__close::after {
+  position: absolute;
+  content: "";
   background-image: url("../images/modal/close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F2F2F2;
-  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  right: 19px;
+  top: 19px;
 }
 
 .modal__close:hover {
@@ -1683,7 +1692,7 @@ img {
   outline: 3px solid #83B3D3;
 }
 
-.modal__close:active {
+.modal__close:active::after {
   outline: none;
   opacity: 0.3;
 }
@@ -1778,12 +1787,11 @@ img {
 }
 
 .modal__input:hover {
-  background-color: rgba(230, 230, 230, 0.3);
-  opacity: 0.6;
+  background-color: #E6E6E6;
 }
 
 .modal__input:focus {
-  background-color: rgba(230, 230, 230, 0.3);
+  background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
   border: none;
 }
@@ -1831,49 +1839,51 @@ img {
   background-color: #F2F2F2;
 }
 
-.quantity__button_minus {
-  background-image: url("../images/modal/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.quantity__button svg {
+  width: 14px;
+  position: absolute;
+  fill: #756157;
+  fill-opacity: 0.3;
+  left: 3px;
 }
 
-.quantity__button_minus:hover {
-  background-image: url("../images/modal/minus-black.svg");
+.quantity__button_minus svg {
+  height: 2px;
+  top: 9px;
 }
 
-.quantity__button_minus:focus {
-  background-image: url("../images/modal/minus-black.svg");
+.quantity__button:hover svg {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.quantity__button:focus {
   outline: 3px solid #82B3D3;
   border-radius: 4px;
 }
 
-.quantity__button_minus:active {
-  background-image: url("../images/modal/minus.svg");
+.quantity__button:focus svg {
+  fill: #000000;
+  fill-opacity: 1;
 }
 
-.quantity__button_plus {
-  background-image: url("../images/modal/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.quantity__button:active svg {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
-.quantity__button_plus:hover {
-  background-image: url("../images/modal/plus-black.svg");
-}
-
-.quantity__button_plus:focus {
-  background-image: url("../images/modal/plus-black.svg");
-  outline: 3px solid #82B3D3;
-  border-radius: 4px;
-}
-
-.quantity__button_plus:active {
-  background-image: url("../images/modal/plus.svg");
+.quantity__button_plus svg {
+  height: 14px;
+  top: 3px;
 }
 
 .quantity__input {
   min-width: 31px;
   height: 48px;
+}
+
+.quantity__input:hover {
+  opacity: 0.6;
 }
 
 .quantity__wrapper {
