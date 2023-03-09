@@ -1787,12 +1787,11 @@ img {
 }
 
 .modal__input:hover {
-  background-color: rgba(230, 230, 230, 0.3);
-  opacity: 0.6;
+  background-color: #E6E6E6;
 }
 
 .modal__input:focus {
-  background-color: rgba(230, 230, 230, 0.3);
+  background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
   border: none;
 }
@@ -1881,6 +1880,10 @@ img {
 .quantity__input {
   min-width: 31px;
   height: 48px;
+}
+
+.quantity__input:hover {
+  opacity: 0.6;
 }
 
 .quantity__wrapper {
